@@ -17,18 +17,18 @@ const Header = () => {
   }, []);
 
   return (
-    <section className="header relative h-[80vh] text-center flex flex-col justify-center items-center overflow-hidden">
+    <section className="header relative h-[60vh] text-center flex flex-col justify-center items-center overflow-hidden">
       <div className="container mx-auto  text-white uppercase space-y-20 flex items-center justify-center flex-col">
-        <div className="space-y-6" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="200">
-          <h1 className=" text-3xl font-bold leading-10">{Header_Title}</h1>
+        <div className="space-y-6 z-10" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="200">
+          <h1 className=" text-3xl font-semibold leading-10 ">{Header_Title}</h1>
           <p className="">{Header_Desc}</p>
         </div>
-        <div data-aos="fade-up" data-aos-duration="2000" data-aos-delay="200" >
-          <Button className='flex items-center justify-center' />
+        <div className="z-10" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="200" >
+          <Button className='flex items-center justify-center ' />
         </div>
       </div>
-      <img src={star2} alt="" className="absolute right-[-7.5rem] bottom-0 rotation" />
-      <img src={star1} alt="" className="absolute left-[-4.5rem] top-[-5%] rotation" />
+      <img src={star2} alt="" className="absolute  right-[-7.5rem] bottom-0 rotation" />
+      <img src={star1} alt="" className="absolute  left-[-4.5rem] top-[-5%] rotation" />
     </section>
   )
 }
