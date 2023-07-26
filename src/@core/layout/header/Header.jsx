@@ -29,15 +29,15 @@ const Header = () => {
 
         </div>
 
-        <div className="z-10 p-4 lg:inline-block lg:w-full relative" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="200" >
-          <Button className=' ' />
+        <div className="z-10 p-4  lg:w-full relative" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="200" >
+          <Button className='' />
         </div>
 
       </header>
 
 
 
-      <img src={star2} alt="" className="absolute  right-[-7.5rem] bottom-0 rotation lg:bottom-14" />
+      <img src={star2} alt="" className="absolute  right-[-7.5rem] bottom-0 rotation lg:bottom-24" />
       <img src={star1} alt="" className="absolute  left-[-4.5rem] top-[-5%] rotation" />
     </section>
   )

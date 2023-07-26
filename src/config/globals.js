@@ -20,4 +20,4 @@ export const About_Title = `We are the experts, let us show you our expertise `;
 
 // ** Project
 export const Project_Icon = projectIcon;
-export const Project_Desc = `we love our clients and we love helping them seize opportunities and find solution.`;
+export const Project_Desc = `We Love Our Clients And We Love Helping Them Seize Opportunities And Find Solution.`;

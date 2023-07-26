@@ -35,11 +35,13 @@ const Project = () => {
         <section className='bg-black h-full pt-8 pb-10'>
             <div className='container mx-auto p-4 '>
                 <div className='mb-10'>
-                    <div className='flex items-center uppercase gap-5'>
-                        <h1 className='font-semibold text-white text-3xl  lg:text-5xl'>we create & <br /> <span className='text-textSecondary'>innovate</span> </h1>
-                        <img src={Project_Icon} alt="" className='inline-block' />
+                    <div className='flex items-center gap-5'>
+                        <h1 className='font-semibold text-white text-3xl  lg:text-5xl xl:text-6xl'><span className='flex gap-4 uppercase'>we create & <img src={Project_Icon} alt="" className='hidden lg:block' /></span>
+                            <br className='lg:hidden'/>
+                            <div className='text-textSecondary flex items-center gap-4'><span className='uppercase'>innovate</span>  <p className='text-white font-extralight text-sm lg:max-w-[280px]'>{Project_Desc}</p></div> </h1>
+                        <img src={Project_Icon} alt="" className='inline-block lg:hidden' />
                     </div>
-                    <p className='text-white font-light text-sm lg:text-lg lg:max-w-[400px]'>{Project_Desc}</p>
+                    <p className='text-white font-light text-sm lg:hidden'>{Project_Desc}</p>
                 </div>
                 <div className='container mx-auto flex flex-wrap items-center justify-center gap-4 md:hidden'>
                     {
