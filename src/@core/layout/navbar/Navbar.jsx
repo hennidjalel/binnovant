@@ -1,5 +1,5 @@
 // import { COMPANY_Name } from "../../../config/globals"
-import { COMPANY_LOGO } from "../../../config/globals"
+import { COMPANY_LOGO, COMPANY_Name } from "../../../config/globals"
 
 import { AnimatePresence, motion } from 'framer-motion';
 
@@ -7,6 +7,8 @@ import { AnimatePresence, motion } from 'framer-motion';
 import { useState } from "react";
 
 import './nav.scss'
+import { Link } from "react-router-dom";
+import BtnSystem from "../../components/buttonSystem/BtnSystem";
 
 const Navbar = () => {
 
@@ -17,9 +19,12 @@ const Navbar = () => {
 
 
     return (
-        <nav className="navbar h-[10vh]  bg-primary overflow-hidden">
+        <nav className="navbar h-[100%]  bg-primary overflow-hidden">
             <div className="container mx-auto flex justify-between items-center p-4">
-                <a href="/" className=""> <img src={COMPANY_LOGO} alt="" /></a>
+                <a href="/" className="lg:hidden"> <img src={COMPANY_LOGO} alt="" /></a>
+                <Link to='/'>
+                    <h1 className="hidden lg:block text-white text-4xl font-bold">{COMPANY_Name}</h1>
+                </Link>
                 <div className='burger md:hidden' onClick={() => setIsActive(!isActive)}>
                     <div className="p-2 rounded-[10%] z-50 bg-white text-primary">{!isOpen ?
                         <svg
@@ -73,6 +78,17 @@ const Navbar = () => {
                         <li> <a href='#pricing' >Pricing</a> </li>
                     </motion.ul>
                 }</AnimatePresence>
+
+                <div className="hidden md:block md:text-white md:text-xl md:font-light md: space-x-5">
+                    <Link to='/'>Home</Link>
+                    <Link>Services</Link>
+                    <Link>Projects</Link>
+                    <Link>Pricing</Link>
+                </div>
+
+                <div className="hidden md:block">
+                    <BtnSystem>Contact Us</BtnSystem>
+                </div>
             </div>
 
         </nav>

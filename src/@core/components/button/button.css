@@ -3,7 +3,7 @@
   align-items: center;
   background-color: #ffb106;
   border: 3px solid #111;
-  border-radius: 25px;
+  border-radius: 35px;
   box-sizing: border-box;
   color: #111;
   cursor: pointer;
@@ -14,7 +14,7 @@
   justify-content: center;
   line-height: 24px;
   max-width: 100%;
-  padding: 25px 35px;
+  padding: 30px 35px;
   position: relative;
   text-align: center;
   text-decoration: none;
@@ -28,7 +28,7 @@
   border-radius: 25px;
   content: "";
   display: block;
-  height: 45px;
+  height: 60px;
   left: -3px;
   width: 100%;
   position: absolute;
@@ -39,7 +39,7 @@
 }
 
 .button-56:hover:after {
-  transform: translate(8px, 0);
+  transform: translate(10px, 0);
 }
 
 .button-56:active {

@@ -59,4 +59,16 @@ export const ProjectData = [
     title: "Development",
     subTitle: "Web App Design & Dev",
   },
+  {
+    id: 4,
+    image: project3,
+    title: "Development",
+    subTitle: "Web App Design & Dev",
+  },
+  {
+    id: 5,
+    image: project3,
+    title: "Development",
+    subTitle: "Web App Design & Dev",
+  },
 ];

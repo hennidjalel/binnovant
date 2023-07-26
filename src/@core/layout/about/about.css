@@ -1,0 +1,15 @@
+.content {
+  position: relative;
+}
+.content::after {
+  content: "";
+  position: absolute;
+  top: 10%;
+  right: 0;
+  width: 3px;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #888888;
+}

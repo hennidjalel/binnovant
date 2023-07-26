@@ -20,7 +20,7 @@
   opacity: .5;
   width: 100%;
   height: 80px;
-  transform: rotate(-3deg);
+  transform: rotate(-2deg);
   flex-shrink: 0;
 }
 .shadowtwo {
@@ -30,7 +30,7 @@
   opacity: .5;
   width: 100%;
   height: 80px;
-  transform: rotate(3deg);
+  transform: rotate(2deg);
   flex-shrink: 0;
 }
 

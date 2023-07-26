@@ -11,7 +11,6 @@ function App() {
     'Contact@binnovant.com',
     "LET'S TALK",
     'Contact@binnovant.com',
-    "LET'S TALK",
   ];
 
   const developmentItems = [
@@ -34,8 +33,8 @@ function App() {
       <About />
       <Project />
       <Ticker items={developmentItems} />
-      <Main/>
-      <Footer/>
+      <Main />
+      <Footer />
     </>
   )
 }
