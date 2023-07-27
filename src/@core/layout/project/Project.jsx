@@ -24,7 +24,7 @@ const Project = () => {
             spaceBetween: 20
         },
         1536: {
-            slidesPerView: 3.5,
+            slidesPerView: 3.8,
             initialSlide: 1,
             spaceBetween: 20
         },

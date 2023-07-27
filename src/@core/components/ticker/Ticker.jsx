@@ -1,3 +1,6 @@
+import Marquee from "react-fast-marquee";
+
+
 import './ticker.css'
 import flechDown from '../../../assets/flechDown.svg'
 
@@ -6,32 +9,23 @@ const Ticker = ({ items }) => {
         <>
             <div className='shadowOne'></div>
             <div className='shadowtwo'></div>
-            <div className="ticker-wrap">
-                <div className="ticker">
-                    <span className="item-collection-1">
-                        {items &&
-                            items.map((item, index) => (
-                                <div className="item " key={index}>
-                                    <div className='flex items-center justify-center gap-9'>
-                                        <span>{item}</span>
-                                        <span><img src={flechDown} alt="" /></span>
+                <div className="ticker-wrap">
+            <Marquee speed={150} pauseOnHover={true}>
+                    <div className="ticker">
+                        <span className="item-collection-1">
+                            {items &&
+                                items.map((item, index) => (
+                                    <div className="item " key={index}>
+                                        <div className='flex items-center justify-center gap-9'>
+                                            <span>{item}</span>
+                                            <span><img src={flechDown} alt="" /></span>
+                                        </div>
                                     </div>
-                                </div>
-                            ))}
-                    </span>
-                    <span className="item-collection-2">
-                        {items &&
-                            items.map((item, index) => (
-                                <div className="item " key={index}>
-                                    <div className='flex items-center justify-center gap-9'>
-                                        <span>{item}</span>
-                                        <span><img src={flechDown} alt="" /></span>
-                                    </div>
-                                </div>
-                            ))}
-                    </span>
+                                ))}
+                        </span>
+                    </div>
+            </Marquee>
                 </div>
-            </div>
         </>
     )
 }

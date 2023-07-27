@@ -30,7 +30,7 @@ const Header = () => {
         </div>
 
         <div className="z-10 p-4  lg:w-full relative" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="200" >
-          <Button className='' />
+          <Button className={`w-[fit-content] float-right`}> Get Started</Button>
         </div>
 
       </header>

@@ -5,8 +5,9 @@
 
 @import "./base/colors.scss";
 
-body{
+body {
   overflow-x: hidden;
+  background-color: #463dff;
 }
 
 html {
@@ -25,15 +26,14 @@ html {
   background-image: radial-gradient(#625aff 8%, transparent 0);
   background-size: 100px 100px;
 }
-.main {
-  position: relative;
-  top: 1px;
-  z-index: -1;
+.mainContainer {
+  // position: relative;
+  // top: 1px;
   background: #111111;
   background-image: radial-gradient(#3b3b3d5b 8%, transparent 0);
   background-size: 100px 100px;
 }
 
-.btn-project{
-  background: rgba(255, 255, 255, 0.20);
+.btn-project {
+  background: rgba(255, 255, 255, 0.2);
 }
